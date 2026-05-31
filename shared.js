@@ -310,7 +310,7 @@
     function startTicking() {
       tickInterval = setInterval(() => {
         if (typeof window.TEH.playTick === 'function') {
-          window.TEH.playTick();
+          //window.TEH.playTick();
         }
       }, 500); // 2 ticks per second matching standard temporal pacing
     }
@@ -355,7 +355,7 @@
     initPortalLinks();
     
     // Remember to uncomment this line to plug your loader back in!
-    //initClockLoader();
+    initClockLoader();
   }
 
   if (document.readyState === 'loading') {

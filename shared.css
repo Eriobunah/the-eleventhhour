@@ -89,7 +89,7 @@
   inset: 0;
   background-color: #2d2a2a; /* Brand Navy Black */
   z-index: 10000;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
