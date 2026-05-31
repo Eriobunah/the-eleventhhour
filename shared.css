@@ -1,3 +1,10 @@
+/* Space-between layout for .hp-why__pillar */
+.hp-why__pillar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
 /* ============================================================
    TEH LOGISTICS — SHARED STYLESHEET
    The Eleventh Hour Logistics, Inc.  |  tehlogistics.com
@@ -39,49 +46,48 @@
    Image swaps   →  replace .teh-ph div with <img class="teh-img">
    ============================================================ */
 
-
 /* ─────────────────────────────────────────────────────────
    1. BRAND TOKENS
    ───────────────────────────────────────────────────────── */
 :root {
   /* Official TEH Brand Colors — Brand Identity PDF */
-  --teh-navy:   #0A1628;
-  --teh-amber:  #F5A623;
-  --teh-cream:  #F3EFE6;
+  --teh-navy: #0a1628;
+  --teh-amber: #f5a623;
+  --teh-cream: #f3efe6;
 
   /* UI-only derivations (not in brand guide) */
-  --teh-navy-card:     #0e1e35;
-  --teh-amber-hover:   #d48a1d;
-  --teh-amber-subtle:  rgba(245,166,35,0.10);
-  --teh-border-dark:   rgba(243,239,230,0.10);
-  --teh-border-light:  rgba(10,22,40,0.12);
-  --teh-text-on-dark:  #F3EFE6;
-  --teh-text-muted:    rgba(243,239,230,0.60);
-  --teh-text-on-light: #0A1628;
+  --teh-navy-card: #0e1e35;
+  --teh-amber-hover: #d48a1d;
+  --teh-amber-subtle: rgba(245, 166, 35, 0.1);
+  --teh-border-dark: rgba(243, 239, 230, 0.1);
+  --teh-border-light: rgba(10, 22, 40, 0.12);
+  --teh-text-on-dark: #f3efe6;
+  --teh-text-muted: rgba(243, 239, 230, 0.6);
+  --teh-text-on-light: #0a1628;
 
   /* Brand Typefaces — Brand Identity PDF pp.16–17 */
-  --teh-font-head: 'Barlow Condensed', sans-serif;
-  --teh-font-body: 'Inter', sans-serif;
+  --teh-font-head: "Barlow Condensed", sans-serif;
+  --teh-font-body: "Inter", sans-serif;
 
   /* Spacing — 8px grid */
-  --sp-xs:  8px;
-  --sp-sm:  16px;
-  --sp-md:  24px;
-  --sp-lg:  48px;
-  --sp-xl:  80px;
+  --sp-xs: 8px;
+  --sp-sm: 16px;
+  --sp-md: 24px;
+  --sp-lg: 48px;
+  --sp-xl: 80px;
   --sp-2xl: 120px;
 
   /* Layout */
-  --teh-max-w:    1280px;
-  --teh-gutter:   48px;
+  --teh-max-w: 1280px;
+  --teh-gutter: 48px;
   --teh-gutter-m: 32px;
   --teh-gutter-s: 20px;
-  --teh-nav-h:    72px;
+  --teh-nav-h: 72px;
 
   /* Motion */
-  --ease:     cubic-bezier(0.25, 0, 0, 1);
+  --ease: cubic-bezier(0.25, 0, 0, 1);
   --ease-out: cubic-bezier(0, 0, 0.2, 1);
-  --dur:      0.35s;
+  --dur: 0.35s;
 }
 
 .loader {
@@ -93,7 +99,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.6s ease-in-out, visibility 0.6s;
+  transition:
+    opacity 0.6s ease-in-out,
+    visibility 0.6s;
   font-family: var(--teh-font-head);
   letter-spacing: 2px;
 }
@@ -115,8 +123,12 @@
 /* ─────────────────────────────────────────────────────────
    2. RESET & BASE
    ───────────────────────────────────────────────────────── */
-*, *::before, *::after {
-  margin: 0; padding: 0; box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -136,18 +148,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-img, video, svg { display: block; max-width: 100%; }
-a               { text-decoration: none; color: inherit; }
-ul, ol          { list-style: none; }
-button          { font-family: inherit; cursor: pointer; border: none; }
-address         { font-style: normal; }
+img,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+address {
+  font-style: normal;
+}
 
-::selection { background: var(--teh-amber); color: var(--teh-navy); }
+::selection {
+  background: var(--teh-amber);
+  color: var(--teh-navy);
+}
 
-::-webkit-scrollbar        { width: 4px; }
-::-webkit-scrollbar-track  { background: var(--teh-navy); }
-::-webkit-scrollbar-thumb  { background: var(--teh-amber); border-radius: 2px; }
-
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--teh-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--teh-amber);
+  border-radius: 2px;
+}
 
 /* ─────────────────────────────────────────────────────────
    3. TYPOGRAPHY SCALE
@@ -166,7 +204,7 @@ address         { font-style: normal; }
 }
 
 .teh-eyebrow--line::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 24px;
   height: 1px;
@@ -178,7 +216,7 @@ address         { font-style: normal; }
 .teh-section-heading {
   font-family: var(--teh-font-head);
   font-size: clamp(32px, 4vw, 52px);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.05;
   text-transform: uppercase;
   margin-bottom: 14px;
@@ -192,7 +230,6 @@ address         { font-style: normal; }
   max-width: 560px;
 }
 
-
 /* ─────────────────────────────────────────────────────────
    4. NAVIGATION
    ─────────────────────────────────────────────────────────
@@ -201,24 +238,27 @@ address         { font-style: normal; }
    ───────────────────────────────────────────────────────── */
 .nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   height: var(--teh-nav-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--teh-gutter);
-  transition: background var(--dur) var(--ease),
-              border-color var(--dur),
-              backdrop-filter var(--dur);
+  transition:
+    background var(--dur) var(--ease),
+    border-color var(--dur),
+    backdrop-filter var(--dur);
 }
 
 .nav--scrolled {
-  background: rgba(10,22,40,0.96);
+  background: rgba(10, 22, 40, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--teh-border-dark);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* Logo */
@@ -274,9 +314,11 @@ address         { font-style: normal; }
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 0; left: 12px; right: 12px;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
   height: 1px;
   background: var(--teh-amber);
   transform: scaleX(0);
@@ -336,7 +378,6 @@ address         { font-style: normal; }
   transform: rotate(-45deg) translate(4.5px, -4.5px);
 }
 
-
 /* ─────────────────────────────────────────────────────────
    5. MOBILE MENU
    ─────────────────────────────────────────────────────────
@@ -347,7 +388,7 @@ address         { font-style: normal; }
   position: fixed;
   inset: 0;
   top: var(--teh-nav-h);
-  background: rgba(10,22,40,0.98);
+  background: rgba(10, 22, 40, 0.98);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   z-index: 999;
@@ -357,7 +398,9 @@ address         { font-style: normal; }
   opacity: 0;
   pointer-events: none;
   transform: translateY(-8px);
-  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+  transition:
+    opacity 0.3s var(--ease),
+    transform 0.3s var(--ease);
 }
 
 .mob-menu.is-open {
@@ -376,7 +419,9 @@ address         { font-style: normal; }
   padding: 16px 0;
   border-bottom: 1px solid var(--teh-border-dark);
   display: block;
-  transition: color 0.2s, padding-left 0.2s;
+  transition:
+    color 0.2s,
+    padding-left 0.2s;
 }
 
 .mob-link:hover,
@@ -391,7 +436,6 @@ address         { font-style: normal; }
   gap: 12px;
   margin-top: 32px;
 }
-
 
 /* ─────────────────────────────────────────────────────────
    6. BUTTONS
@@ -433,13 +477,13 @@ address         { font-style: normal; }
 .teh-btn--primary:hover {
   background: var(--teh-amber-hover);
   border-color: var(--teh-amber-hover);
-  box-shadow: 0 8px 24px rgba(245,166,35,0.28);
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.28);
 }
 
 .teh-btn--secondary {
   background: transparent;
   color: var(--teh-amber);
-  border-color: rgba(245,166,35,0.40);
+  border-color: rgba(245, 166, 35, 0.4);
 }
 
 .teh-btn--secondary:hover {
@@ -451,14 +495,13 @@ address         { font-style: normal; }
 .teh-btn--ghost {
   background: transparent;
   color: var(--teh-cream);
-  border-color: rgba(243,239,230,0.35);
+  border-color: rgba(243, 239, 230, 0.35);
 }
 
 .teh-btn--ghost:hover {
-  background: rgba(243,239,230,0.08);
+  background: rgba(243, 239, 230, 0.08);
   border-color: var(--teh-cream);
 }
-
 
 /* ─────────────────────────────────────────────────────────
    7. SECTION UTILITIES
@@ -473,10 +516,15 @@ address         { font-style: normal; }
   margin: 0 auto;
 }
 
-.teh-section__header { margin-bottom: var(--sp-xl); }
-.teh-section__header--center { text-align: center; }
-.teh-section__header--center .teh-eyebrow { justify-content: center; }
-
+.teh-section__header {
+  margin-bottom: var(--sp-xl);
+}
+.teh-section__header--center {
+  text-align: center;
+}
+.teh-section__header--center .teh-eyebrow {
+  justify-content: center;
+}
 
 /* ─────────────────────────────────────────────────────────
    8. IMAGE & ICON PLACEHOLDERS
@@ -506,13 +554,13 @@ address         { font-style: normal; }
 /* Base placeholder */
 .teh-ph {
   background: var(--teh-navy-card);
-  border: 1px dashed rgba(245,166,35,0.25);
+  border: 1px dashed rgba(245, 166, 35, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: rgba(245,166,35,0.50);
+  color: rgba(245, 166, 35, 0.5);
   font-family: var(--teh-font-head);
   font-size: 10px;
   font-weight: 600;
@@ -527,7 +575,7 @@ address         { font-style: normal; }
 .teh-ph__icon {
   width: 32px;
   height: 32px;
-  border: 1px solid rgba(245,166,35,0.25);
+  border: 1px solid rgba(245, 166, 35, 0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -536,13 +584,27 @@ address         { font-style: normal; }
 }
 
 /* Aspect ratio variants — parent must have position:relative or defined height */
-.teh-ph--hero     { min-height: 100vh; }
-.teh-ph--video    { aspect-ratio: 16/9; }
-.teh-ph--landscape{ aspect-ratio: 3/2; }
-.teh-ph--square   { aspect-ratio: 1/1; }
-.teh-ph--card     { min-height: 320px; }
-.teh-ph--section  { min-height: 480px; }
-.teh-ph--portrait { aspect-ratio: 3/4; }
+.teh-ph--hero {
+  min-height: 100vh;
+}
+.teh-ph--video {
+  aspect-ratio: 16/9;
+}
+.teh-ph--landscape {
+  aspect-ratio: 3/2;
+}
+.teh-ph--square {
+  aspect-ratio: 1/1;
+}
+.teh-ph--card {
+  min-height: 320px;
+}
+.teh-ph--section {
+  min-height: 480px;
+}
+.teh-ph--portrait {
+  aspect-ratio: 3/4;
+}
 
 /* Certification logos */
 .teh-cert-logos {
@@ -570,7 +632,7 @@ address         { font-style: normal; }
 }
 
 .teh-cert-logo:hover {
-  border-color: rgba(245,166,35,0.35);
+  border-color: rgba(245, 166, 35, 0.35);
   color: var(--teh-cream);
 }
 
@@ -599,7 +661,10 @@ address         { font-style: normal; }
   color: var(--teh-text-muted);
   text-decoration: none;
   flex-shrink: 0;
-  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
 }
 
 .teh-social-icon svg {
@@ -611,9 +676,8 @@ address         { font-style: normal; }
 .teh-social-icon:hover {
   border-color: var(--teh-amber);
   color: var(--teh-amber);
-  background: rgba(245,166,35,0.08);
+  background: rgba(245, 166, 35, 0.08);
 }
-
 
 /* ─────────────────────────────────────────────────────────
    9. FOOTER
@@ -714,7 +778,9 @@ address         { font-style: normal; }
   letter-spacing: 1.5px;
   color: var(--teh-text-muted);
   padding: 5px 0;
-  transition: color 0.2s, padding-left 0.2s;
+  transition:
+    color 0.2s,
+    padding-left 0.2s;
 }
 
 .teh-footer__nav-link:hover {
@@ -743,7 +809,7 @@ address         { font-style: normal; }
 
 .teh-footer__watermark {
   font-family: var(--teh-font-head);
-  font-size: clamp(48px, 10vw, 140px);
+  /* font-size: clamp(48px, 10vw, 140px); */
   font-weight: 600;
   letter-spacing: 12px;
   text-transform: uppercase;
@@ -758,7 +824,6 @@ address         { font-style: normal; }
   overflow: hidden;
 }
 
-
 /* ─────────────────────────────────────────────────────────
    10. SCROLL REVEAL
    ─────────────────────────────────────────────────────────
@@ -769,7 +834,9 @@ address         { font-style: normal; }
 .teh-reveal {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.65s var(--ease-out), transform 0.65s var(--ease-out);
+  transition:
+    opacity 0.65s var(--ease-out),
+    transform 0.65s var(--ease-out);
 }
 
 .teh-reveal--visible {
@@ -777,36 +844,71 @@ address         { font-style: normal; }
   transform: translateY(0);
 }
 
-.teh-reveal--delay-1 { transition-delay: 0.08s; }
-.teh-reveal--delay-2 { transition-delay: 0.16s; }
-.teh-reveal--delay-3 { transition-delay: 0.24s; }
-.teh-reveal--delay-4 { transition-delay: 0.32s; }
-
+.teh-reveal--delay-1 {
+  transition-delay: 0.08s;
+}
+.teh-reveal--delay-2 {
+  transition-delay: 0.16s;
+}
+.teh-reveal--delay-3 {
+  transition-delay: 0.24s;
+}
+.teh-reveal--delay-4 {
+  transition-delay: 0.32s;
+}
 
 /* ─────────────────────────────────────────────────────────
    11. RESPONSIVE
    ───────────────────────────────────────────────────────── */
 @media (max-width: 1100px) {
-  :root { --teh-gutter: var(--teh-gutter-m); }
-  .teh-footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  :root {
+    --teh-gutter: var(--teh-gutter-m);
+  }
+  .teh-footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 900px) {
-  .nav-links    { display: none; }
-  .nav-hamburger{ display: flex; }
-  .mob-menu     { display: flex; }
+  .nav-links {
+    display: none;
+  }
+  .nav-hamburger {
+    display: flex;
+  }
+  .mob-menu {
+    display: flex;
+  }
 }
 
 @media (max-width: 600px) {
   :root {
-    --teh-gutter:  var(--teh-gutter-s);
+    --teh-gutter: var(--teh-gutter-s);
     --sp-2xl: 80px;
-    --sp-xl:  52px;
+    --sp-xl: 52px;
   }
-  .nav { padding: 0 var(--teh-gutter-s); }
-  .teh-footer__grid { grid-template-columns: 1fr; gap: 32px; }
-  .teh-footer__cta-row { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .teh-btn { padding: 12px 24px; font-size: 12px; }
-  .teh-cert-logos { gap: 8px; }
-  .teh-cert-logo { font-size: 9px; padding: 8px 12px; }
+  .nav {
+    padding: 0 var(--teh-gutter-s);
+  }
+  .teh-footer__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .teh-footer__cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .teh-btn {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+  .teh-cert-logos {
+    gap: 8px;
+  }
+  .teh-cert-logo {
+    font-size: 9px;
+    padding: 8px 12px;
+  }
 }
