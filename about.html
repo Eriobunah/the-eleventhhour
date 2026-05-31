@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>About | The Eleventh Hour Logistics — HazMat Freight Forwarder for Oil &amp; Gas</title>
+
+    <meta name="description" content="Learn about The Eleventh Hour Logistics — CTPAT-certified, ISNetworld-registered HazMat freight forwarder based in Houston, TX. Built for the most complex, regulated, highest-value freight in the country." />
+
+    <meta name="keywords" content="about TEH logistics, eleventh hour logistics history, CTPAT certified freight forwarder, ISNetworld registered, hazmat freight forwarder Texas, oil gas logistics company" />
+
+    <meta name="author" content="The Eleventh Hour Logistics, Inc." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.tehlogistics.com/about.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tehlogistics.com/about.html" />
+    <meta property="og:title" content="About | The Eleventh Hour Logistics" />
+    <meta property="og:description" content="CTPAT-certified, ISNetworld-registered HazMat freight forwarder for Oil &amp; Gas. Built for precision, compliance, and the hardest freight in the world." />
+    <meta property="og:image" content="https://www.tehlogistics.com/assets/images/og-image.jpg" />
+    <meta property="og:site_name" content="The Eleventh Hour Logistics" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+    <link rel="stylesheet" href="shared.css" />
+
+    <style>
+
+        /* ── AB: HERO ───────────────────────────────────── */
+        .ab-hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 0 var(--teh-gutter);
+        }
+
+        .ab-hero__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .ab-hero__bg-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ab-hero__overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background:
+                linear-gradient(to right, rgba(10, 22, 40, 0.88) 0%, rgba(10, 22, 40, 0.40) 100%),
+                linear-gradient(to top, rgba(10, 22, 40, 0.80) 0%, transparent 55%);
+        }
+
+        .ab-hero__content {
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-top: var(--teh-nav-h);
+            padding-bottom: var(--sp-xl);
+            margin-top: 60px;
+        }
+
+        .ab-hero__breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-bottom: var(--sp-xl);
+            font-family: var(--teh-font-head);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(243, 239, 230, 0.55);
+        }
+
+        .ab-hero__breadcrumb a {
+            color: rgba(243, 239, 230, 0.55);
+            transition: color 0.2s;
+        }
+
+        .ab-hero__breadcrumb a:hover {
+            color: var(--teh-amber);
+        }
+
+        .ab-hero__breadcrumb-sep {
+            opacity: 0.4;
+        }
+
+        .ab-hero__breadcrumb-line {
+            height: 1px;
+            width: 200px;
+            background: rgba(243, 239, 230, 0.25);
+            flex-shrink: 0;
+        }
+
+        .ab-hero__body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: var(--sp-xl);
+        }
+
+        .ab-hero__left {
+            flex: 1;
+            max-width: 700px;
+        }
+
+        .ab-hero__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(40px, 6.5vw, 72px);
+            font-weight: 500;
+            line-height: 0.97;
+            letter-spacing: -0.5px;
+            color: var(--teh-cream);
+            margin: 0 0 var(--sp-md);
+        }
+
+        .ab-hero__heading em {
+            font-style: normal;
+            color: var(--teh-amber);
+        }
+
+        .ab-hero__right {
+            max-width: 360px;
+            flex-shrink: 0;
+        }
+
+        .ab-hero__subtext {
+            font-family: var(--teh-font-body);
+            font-size: 15px;
+            line-height: 1.75;
+            color: rgba(243, 239, 230, 0.78);
+        }
+
+        /* ── AB: INTRO SPLIT ────────────────────────────── */
+        .ab-intro {
+            background-color: black;
+            padding: var(--sp-2xl) var(--teh-gutter);
+        }
+
+        .line-above {
+            border: dashed rgba(255, 255, 255, 0.263) 1px;
+            margin: 0 0 50px 0;
+        }
+
+        .ab-intro__inner {
+            max-width: var(--teh-max-w);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 450px;
+            align-items: center;
+        }
+
+        .ab-intro__left {
+            padding-top: 6px;
+        }
+
+        .ab-intro__right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ab-intro__eyebrow-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 0;
+        }
+
+        .ab-intro__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(28px, 3.5vw, 44px);
+            font-weight: 700;
+            line-height: 1.05;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: var(--sp-md);
+        }
+
+        .ab-intro__text {
+            font-family: var(--teh-font-body);
+            font-size: 15px;
+            line-height: 1.8;
+            color: white;
+            max-width: 680px;
+        }
+
+        .ab-intro__text + .ab-intro__text {
+            margin-top: 0;
+        }
+
+        /* ── AB: FOCUSED SECTION (img right) ────────────── */
+        .ab-focused {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 520px;
+        }
+
+        .ab-focused__body {
+            background: white;
+            color: var(--teh-cream);
+            padding: var(--sp-xl) 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ab-focused__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(28px, 3.5vw, 44px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: black;
+            line-height: 1.05;
+            margin-bottom: var(--sp-md);
+        }
+
+        .ab-focused__text {
+            font-family: var(--teh-font-body);
+            font-size: 15px;
+            line-height: 1.8;
+            color: black;
+        }
+
+        .ab-focused__img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ab-focused__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── AB: CREDENTIALS ────────────────────────────── */
+        .ab-creds {
+            background: var(--teh-navy);
+            padding: var(--sp-2xl) var(--teh-gutter);
+        }
+
+        .ab-creds__inner {
+            max-width: var(--teh-max-w);
+            margin: 0 auto;
+        }
+
+        .ab-creds__header {
+            text-align: center;
+            margin-bottom: var(--sp-xl);
+        }
+
+        .ab-creds__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(28px, 4vw, 44px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--teh-cream);
+        }
+
+        .ab-creds__pillars {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border-bottom: 1px dashed rgba(243,239,230,0.25);
+            margin-bottom: var(--sp-xl);
+        }
+
+        .ab-creds__pillar {
+            padding: var(--sp-lg) var(--sp-md);
+            border-left: 1px dashed rgba(243,239,230,0.25);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 200px;
+            text-align: left;
+        }
+
+        .ab-creds__pillar:first-child {
+            border-left: none;
+        }
+
+        .ab-creds__pillar-head {
+            font-family: var(--teh-font-head);
+            font-size: clamp(22px, 2.5vw, 32px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--teh-amber);
+            line-height: 1.1;
+        }
+
+        .ab-creds__pillar-sub {
+            font-family: var(--teh-font-body);
+            font-size: 14px;
+            color: rgba(243,239,230,0.70);
+            line-height: 1.6;
+            margin-top: var(--sp-md);
+        }
+
+        .ab-creds__logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+
+        .ab-creds__logos .make-white {
+            filter: brightness(0) invert(1);
+        }
+
+        .ab-creds__logo-img {
+            height: auto;
+            width: 100px;
+            transition: opacity 0.3s;
+        }
+
+        .ab-creds__logo-img:hover {
+            opacity: 0.75;
+        }
+
+        /* ── AB: NOT BUILT FOR VOLUME ───────────────────── */
+        .ab-precision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 520px;
+        }
+
+        .ab-precision__body {
+            background: var(--teh-cream);
+            padding: var(--sp-xl) 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .ab-precision__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(28px, 3.5vw, 46px);
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--teh-navy);
+            line-height: 1.05;
+            margin-bottom: var(--sp-md);
+        }
+
+        .ab-precision__heading em {
+            font-style: normal;
+            color: var(--teh-amber);
+        }
+
+        .ab-precision__text {
+            font-family: var(--teh-font-body);
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(10, 22, 40, 0.70);
+            margin-bottom: var(--sp-lg);
+        }
+
+        .ab-precision__img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ab-precision__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ── AB: MISSION QUOTE ──────────────────────────── */
+        .ab-mission {
+            background: var(--teh-cream);
+            padding: var(--sp-2xl) var(--teh-gutter);
+            text-align: center;
+        }
+
+        .ab-mission__inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .ab-mission__quote {
+            font-family: var(--teh-font-head);
+            font-size: clamp(22px, 3.5vw, 38px);
+            font-weight: 400;
+            line-height: 1.4;
+            color: var(--teh-navy);
+            margin: 0;
+        }
+
+        .ab-mission__quote strong {
+            font-weight: 700;
+        }
+
+        /* Opening quotation mark */
+        .ab-mission__quote::before {
+            content: '\201C';
+            display: block;
+            font-family: var(--teh-font-head);
+            font-size: 120px;
+            font-weight: 900;
+            color: var(--teh-amber);
+            line-height: 0.7;
+            margin-bottom: var(--sp-sm);
+        }
+
+        /* ── AB: CTA ────────────────────────────────────── */
+        .ab-cta {
+            position: relative;
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: var(--sp-2xl) var(--teh-gutter);
+        }
+
+        .ab-cta__bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .ab-cta__bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ab-cta__overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: rgba(10, 22, 40, 0.82);
+        }
+
+        .ab-cta__content {
+            position: relative;
+            z-index: 2;
+            max-width: 760px;
+            text-align: center;
+        }
+
+        .ab-cta__heading {
+            font-family: var(--teh-font-head);
+            font-size: clamp(28px, 5vw, 56px);
+            font-weight: 500;
+            color: var(--teh-cream);
+            line-height: 1.05;
+            margin-bottom: var(--sp-md);
+        }
+
+        .ab-cta__desc {
+            font-family: var(--teh-font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(243, 239, 230, 0.75);
+            max-width: 600px;
+            margin: 0 auto var(--sp-lg);
+        }
+
+        /* ── AB: RESPONSIVE ─────────────────────────────── */
+        @media (max-width: 1100px) {
+            .ab-focused__body,
+            .ab-precision__body {
+                padding: var(--sp-xl) var(--teh-gutter-m);
+            }
+
+            .ab-intro__inner {
+                display: flex;
+                justify-content: space-between;
+                gap: 100px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .ab-hero__inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--sp-md);
+            }
+
+            .ab-hero__right {
+                max-width: 100%;
+            }
+
+            .ab-intro,
+            .ab-focused,
+            .ab-precision {
+                grid-template-columns: 1fr;
+            }
+
+            .ab-intro__img,
+            .ab-focused__img,
+            .ab-precision__img {
+                min-height: 320px;
+            }
+
+            .ab-focused__body,
+            .ab-precision__body {
+                padding: var(--sp-xl) var(--teh-gutter-m);
+            }
+
+            /* On mobile: image comes first for intro, body first for others */
+            .ab-focused {
+                direction: ltr;
+            }
+
+            .ab-creds__pillars {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ab-creds__pillar {
+                border-left: none;
+                border-top: 1px dashed rgba(243,239,230,0.25);
+            }
+
+            .ab-creds__pillar:nth-child(odd) {
+                border-left: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .ab-hero__heading {
+                font-size: clamp(38px, 10vw, 52px);
+            }
+
+            .ab-hero__breadcrumb-line {
+                width: 60px;
+            }
+
+            .ab-intro__inner,
+            .ab-focused__body,
+            .ab-precision__body {
+                padding: var(--sp-xl) var(--teh-gutter-s);
+            }
+
+            .ab-creds__pillars {
+                grid-template-columns: 1fr;
+            }
+
+            .ab-creds__logos {
+                gap: 24px;
+                justify-content: center;
+            }
+
+            .ab-mission__quote {
+                font-size: clamp(18px, 5vw, 26px);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- 1. CLOCK LOADER -->
+    <div id="loader" class="loader">
+        <div class="clock">
+            <div class="clock__face">
+                <div class="clock__marker clock__marker--12"></div>
+                <div class="clock__marker clock__marker--11"></div>
+            </div>
+            <div id="minuteHand" class="clock__hand clock__hand--minute"></div>
+            <div id="hourHand" class="clock__hand clock__hand--hour"></div>
+        </div>
+        <p class="loader__text">The Eleventh Hour</p>
+    </div>
+
+    <!-- 2. NAVIGATION -->
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+
+        <a class="nav-logo" href="index.html" aria-label="The Eleventh Hour Logistics — Home">
+            <img src="assets/favicon.svg" alt="The Eleventh Hour Logistics" class="nav-logo__img" />
+        </a>
+
+        <ul class="nav-links" role="menubar">
+            <li><a class="nav-link" href="index.html" role="menuitem">Home</a></li>
+            <li><a class="nav-link" href="hub.html" role="menuitem">Hub</a></li>
+            <li><a class="nav-link" href="services.html" role="menuitem">Services</a></li>
+            <li><a class="nav-link" href="carriers.html" role="menuitem">Carriers</a></li>
+            <li><a class="nav-link" href="agents.html" role="menuitem">Agents</a></li>
+            <li><a class="nav-link nav-link--active" href="about.html" role="menuitem">About</a></li>
+            <li><a class="nav-link" href="contact.html" role="menuitem">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a class="teh-btn teh-btn--primary" href="quote.html">Request a Quote</a>
+            <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobMenu">
+                <span class="nav-hamburger__bar"></span>
+                <span class="nav-hamburger__bar"></span>
+                <span class="nav-hamburger__bar"></span>
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mob-menu" id="mobMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+        <a class="mob-link" href="index.html" onclick="TEH.closeMenu()">Home</a>
+        <a class="mob-link" href="hub.html" onclick="TEH.closeMenu()">Hub</a>
+        <a class="mob-link" href="services.html" onclick="TEH.closeMenu()">Services</a>
+        <a class="mob-link" href="carriers.html" onclick="TEH.closeMenu()">Carriers</a>
+        <a class="mob-link" href="agents.html" onclick="TEH.closeMenu()">Agents</a>
+        <a class="mob-link mob-link--active" href="about.html" onclick="TEH.closeMenu()">About</a>
+        <a class="mob-link" href="contact.html" onclick="TEH.closeMenu()">Contact</a>
+        <div class="mob-menu__cta">
+            <a class="teh-btn teh-btn--primary" href="quote.html" onclick="TEH.closeMenu()" style="justify-content:center;">Request a Quote</a>
+            <a class="teh-btn teh-btn--secondary" href="agents.html" onclick="TEH.closeMenu()" style="justify-content:center;">Apply to Partner</a>
+        </div>
+    </div>
+
+
+    <main id="mainContent">
+
+        <!-- ── HERO ──────────────────────────────────────── -->
+        <section class="ab-hero" aria-labelledby="aboutHeroHeading">
+
+            <div class="ab-hero__bg" aria-hidden="true">
+                <img src="assets/images/about/about-hero.jpg" alt="Oil refinery pipeline infrastructure" class="ab-hero__bg-img" />
+            </div>
+
+            <div class="ab-hero__overlay" aria-hidden="true"></div>
+
+            <div class="ab-hero__content">
+
+                <div class="ab-hero__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sv-hero__breadcrumb-sep" aria-hidden="true">/</span>
+                    <span>About</span>
+                    <div class="ab-hero__breadcrumb-line" aria-hidden="true"></div>
+                </div>
+
+                <div class="ab-hero__body">
+
+                    <div class="ab-hero__left teh-reveal">
+                        <h1 class="ab-hero__heading" id="aboutHeroHeading">
+                            The Eleventh HourLogistics<br>
+                            <em>— In Time,Every Time</em>
+                        </h1>
+                    </div>
+
+                    <div class="ab-hero__right teh-reveal teh-reveal--delay-2">
+                        <p class="ab-hero__subtext">
+                            TEH is a CTPAT certified, ISNetworld registered, asset-based freight forwarder and technology platform headquartered in Houston, TX. We are reinventing the freight operating system purpose-built for the most complex, most regulated, highest-value freight in the country.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ── SPECIALTY FREIGHT INTRO ───────────────────── -->
+        <section class="ab-intro" aria-labelledby="introHeading">
+            <div class="line-above"></div>
+
+            <div class="ab-intro__inner teh-reveal">
+                
+                <div class="ab-intro__left">
+                    <p class="teh-eyebrow teh-eyebrow--line">Who We Are</p>
+                </div>
+
+                <div class="ab-intro__right">
+                    <h2 class="ab-intro__heading" id="introHeading">
+                    A Specialty Freight Forwarder Built for Regulated Environments
+                </h2>
+                    <p class="ab-intro__text">
+                    The Eleventh Hour Logistics was founded on one belief: the most complex, most regulated, most demanding freight in the world — Oil &amp; Gas, HazMat, Pharma, Military, Heavy Equipment — deserves a freight technology platform built to handle it.
+                </p>
+
+                <p class="ab-intro__text">
+                    Our founder spent years dispatching, managing fleets, and operating in the oilfield freight space before stepping back and watching the technology landscape leave specialized carriers behind. The big platforms chased volume. Nobody was doing this for the verticals that actually needed a purpose-built solution.
+                </p>
+
+                <p class="ab-intro__text">
+                    TEH is the answer to that gap. We are reinventing the freight space not as a general freight forwarder, but as a vertically integrated platform — built on CTPAT certification, ISNetworld registration, and a WEX fuel card partnership that gives our carriers a genuine financial advantage from day one.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ── FOCUSED ON OIL & GAS ──────────────────────── -->
+        <section class="ab-focused" aria-labelledby="focusedHeading">
+
+            <div class="ab-focused__img">
+                <img src="assets/images/about/ab-focus.jpg" alt="Oil pipeline and refinery infrastructure at dusk" loading="lazy" />
+            </div>
+
+            <div class="ab-focused__body teh-reveal">
+
+                <p class="teh-eyebrow teh-eyebrow--line">Our Focus</p>
+
+                <h2 class="ab-focused__heading" id="focusedHeading">
+                    Focused on Oil &amp; Gas<br>and Hazmat Freight
+                </h2>
+
+                <p class="ab-focused__text">
+                    Our work centers around industries and shipments that demand strict compliance and operational control. From OCTG and pipe logistics to hazmat transportation and equipment handling, every service is built around real-world industry requirements.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ── CREDENTIALS ───────────────────────────────── -->
+        <section class="ab-creds" id="credentials" aria-labelledby="credsHeading">
+
+            <div class="ab-creds__inner">
+
+                <div class="ab-creds__header teh-reveal">
+                    <p class="teh-eyebrow" style="justify-content:center;">Credentials</p>
+                    <h2 class="ab-creds__heading" id="credsHeading">
+                        Built on Certification, Compliance, and Standards
+                    </h2>
+                </div>
+
+                <div class="ab-creds__pillars teh-reveal teh-reveal--delay-1" role="list">
+
+                    <div class="ab-creds__pillar" role="listitem">
+                        <h3 class="ab-creds__pillar-head">Hazmat-trained</h3>
+                        <p class="ab-creds__pillar-sub">to DOT 49 CFR &amp; IATA Standards</p>
+                    </div>
+
+                    <div class="ab-creds__pillar" role="listitem">
+                        <h3 class="ab-creds__pillar-head">CTPAT</h3>
+                        <p class="ab-creds__pillar-sub">Certified Since 2010</p>
+                    </div>
+
+                    <div class="ab-creds__pillar" role="listitem">
+                        <h3 class="ab-creds__pillar-head">ISNetworld</h3>
+                        <p class="ab-creds__pillar-sub">Registered</p>
+                    </div>
+
+                    <div class="ab-creds__pillar" role="listitem">
+                        <h3 class="ab-creds__pillar-head">Serving oil &amp; gas</h3>
+                        <p class="ab-creds__pillar-sub">Operators and Contractors</p>
+                    </div>
+
+                </div>
+
+                <div class="ab-creds__logos teh-reveal teh-reveal--delay-2" role="list" aria-label="Industry certifications">
+                    <img src="assets/images/trust1.png" alt="IATA" class="ab-creds__logo-img make-white" />
+                    <img src="assets/images/trust2.png" alt="CTPAT Certified" class="ab-creds__logo-img make-white" />
+                    <img src="assets/images/trust3.png" alt="Licensed Freight Forwarder" class="ab-creds__logo-img" />
+                    <img src="assets/images/trust4.png" alt="ISNetworld Registered" class="ab-creds__logo-img"/>
+                    <img src="assets/images/trust5.png" alt="US DOT" class="ab-creds__logo-img make-white" />
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ── NOT BUILT FOR VOLUME ──────────────────────── -->
+        <section class="ab-precision" aria-labelledby="precisionHeading">
+
+            <div class="ab-precision__body teh-reveal">
+
+                <p class="teh-eyebrow teh-eyebrow--line">Our Approach</p>
+
+                <h2 class="ab-precision__heading" id="precisionHeading">
+                    Not Built for Volume.<br>
+                    Built for <em>Precision.</em>
+                </h2>
+
+                <p class="ab-precision__text">
+                    The general freight broker knows TEH is built for shipments that require expertise, compliance, and operational discipline — where mistakes are costly and reliability is critical.
+                </p>
+
+                <a class="teh-btn teh-btn--primary" href="quote.html">Request a Quote</a>
+
+            </div>
+
+            <div class="ab-precision__img">
+                <img src="assets/images/about-trucks.png" alt="Row of red semi trucks parked at depot" loading="lazy" />
+            </div>
+
+        </section>
+
+
+        <!-- ── MISSION QUOTE ─────────────────────────────── -->
+        <section class="ab-mission" aria-labelledby="missionHeading">
+            <div class="ab-mission__inner teh-reveal">
+
+                <p class="teh-eyebrow" style="justify-content:center;" id="missionHeading">Our Mission</p>
+
+                <blockquote class="ab-mission__quote">
+                    We exist to give the carriers, agents,<br>
+                    and shippers who move the hardest freight in the<br>
+                    world <strong>a platform that finally understands what they do</strong><br>
+                    — and builds every tool around the compliance,<br>
+                    credentialing, and operational reality of specialized freight.
+                </blockquote>
+
+            </div>
+        </section>
+
+
+        <!-- ── CTA ──────────────────────────────────────── -->
+        <section class="ab-cta" aria-labelledby="ctaHeading">
+
+            <div class="ab-cta__bg" aria-hidden="true">
+                <img src="assets/images/quote-bg.png" alt="Oil refinery at night" loading="lazy" />
+            </div>
+            <div class="ab-cta__overlay" aria-hidden="true"></div>
+
+            <div class="ab-cta__content teh-reveal">
+                <p class="teh-eyebrow" style="justify-content:center;">Get Started</p>
+                <h2 class="ab-cta__heading" id="ctaHeading">
+                    Move Your Freight with a<br>Partner Built for Oil &amp; Gas
+                </h2>
+                <p class="ab-cta__desc">
+                    Get a fast, compliant quote for hazmat, OCTG, chemicals, and specialized freight —
+                    handled by a team that understands the stakes.
+                </p>
+                <a class="teh-btn teh-btn--primary" href="quote.html">Request a Quote</a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ── FOOTER ────────────────────────────────────────── -->
+    <footer class="teh-footer" role="contentinfo">
+        <div class="teh-footer__inner">
+
+            <div class="teh-footer__grid">
+
+                <div>
+                    <span class="teh-footer__col-label">Contact</span>
+
+                    <div class="teh-footer__cta-row">
+                        <span class="teh-footer__request">Request a Quote</span>
+                        <span class="teh-footer__divider" aria-hidden="true">|</span>
+                        <a class="teh-btn teh-btn--primary" href="agents.html">Apply to Partner</a>
+                    </div>
+
+                    <span class="teh-footer__col-label">Quick Contact</span>
+
+                    <div class="teh-footer__socials" role="list" aria-label="Social media links">
+                        <a href="https://linkedin.com/company/theeleventhhourlogistics" class="teh-social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" role="listitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z" fill-rule="evenodd"></path>
+                            </svg>
+                        </a>
+
+                        <a href="https://twitter.com/tehlogistics" class="teh-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X" role="listitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z"></path>
+                            </svg>
+                        </a>
+
+                        <a href="https://instagram.com/tehlogistics" class="teh-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram" role="listitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path d="M10.202,2.098c-1.49,.07-2.507,.308-3.396,.657-.92,.359-1.7,.84-2.477,1.619-.776,.779-1.254,1.56-1.61,2.481-.345,.891-.578,1.909-.644,3.4-.066,1.49-.08,1.97-.073,5.771s.024,4.278,.096,5.772c.071,1.489,.308,2.506,.657,3.396,.359,.92,.84,1.7,1.619,2.477,.779,.776,1.559,1.253,2.483,1.61,.89,.344,1.909,.579,3.399,.644,1.49,.065,1.97,.08,5.771,.073,3.801-.007,4.279-.024,5.773-.095s2.505-.309,3.395-.657c.92-.36,1.701-.84,2.477-1.62s1.254-1.561,1.609-2.483c.345-.89,.579-1.909,.644-3.398,.065-1.494,.081-1.971,.073-5.773s-.024-4.278-.095-5.771-.308-2.507-.657-3.397c-.36-.92-.84-1.7-1.619-2.477s-1.561-1.254-2.483-1.609c-.891-.345-1.909-.58-3.399-.644s-1.97-.081-5.772-.074-4.278,.024-5.771,.096m.164,25.309c-1.365-.059-2.106-.286-2.6-.476-.654-.252-1.12-.557-1.612-1.044s-.795-.955-1.05-1.608c-.192-.494-.423-1.234-.487-2.599-.069-1.475-.084-1.918-.092-5.656s.006-4.18,.071-5.656c.058-1.364,.286-2.106,.476-2.6,.252-.655,.556-1.12,1.044-1.612s.955-.795,1.608-1.05c.493-.193,1.234-.422,2.598-.487,1.476-.07,1.919-.084,5.656-.092,3.737-.008,4.181,.006,5.658,.071,1.364,.059,2.106,.285,2.599,.476,.654,.252,1.12,.555,1.612,1.044s.795,.954,1.051,1.609c.193,.492,.422,1.232,.486,2.597,.07,1.476,.086,1.919,.093,5.656,.007,3.737-.006,4.181-.071,5.656-.06,1.365-.286,2.106-.476,2.601-.252,.654-.556,1.12-1.045,1.612s-.955,.795-1.608,1.05c-.493,.192-1.234,.422-2.597,.487-1.476,.069-1.919,.084-5.657,.092s-4.18-.007-5.656-.071M21.779,8.517c.002,.928,.755,1.679,1.683,1.677s1.679-.755,1.677-1.683c-.002-.928-.755-1.679-1.683-1.677,0,0,0,0,0,0-.928,.002-1.678,.755-1.677,1.683m-12.967,7.496c.008,3.97,3.232,7.182,7.202,7.174s7.183-3.232,7.176-7.202c-.008-3.97-3.233-7.183-7.203-7.175s-7.182,3.233-7.174,7.203m2.522-.005c-.005-2.577,2.08-4.671,4.658-4.676,2.577-.005,4.671,2.08,4.676,4.658,.005,2.577-2.08,4.671-4.658,4.676-2.577,.005-4.671-2.079-4.676-4.656h0"></path>
+                            </svg>
+                        </a>
+
+                        <a href="https://facebook.com/tehlogistics" class="teh-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook" role="listitem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="teh-footer__col-label">Address</span>
+                    <address class="teh-footer__address">
+                        <span class="teh-footer__address-hq">Headquarters</span>
+                        <p>Newport Beach, CA</p>
+                        <p>Dallas, TX</p>
+                    </address>
+                </div>
+
+                <div>
+                    <span class="teh-footer__col-label">Main</span>
+                    <nav aria-label="Footer navigation">
+                        <a class="teh-footer__nav-link" href="index.html">Home</a>
+                        <a class="teh-footer__nav-link" href="hub.html">Hub</a>
+                        <a class="teh-footer__nav-link" href="quote.html">Quote</a>
+                        <a class="teh-footer__nav-link" href="services.html">Services</a>
+                        <a class="teh-footer__nav-link" href="carriers.html">Carriers</a>
+                        <a class="teh-footer__nav-link" href="agents.html">Agents</a>
+                        <a class="teh-footer__nav-link" href="about.html">About</a>
+                        <a class="teh-footer__nav-link" href="contact.html">Contact</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <span class="teh-footer__col-label">Support</span>
+                    <a class="teh-footer__nav-link" href="privacy.html">Privacy Policy</a>
+                    <a class="teh-footer__nav-link" href="terms.html">Terms of Service</a>
+                    <a class="teh-footer__nav-link" href="cookies.html">Cookie Policy</a>
+                </div>
+
+            </div>
+
+            <div class="teh-footer__bottom">
+                <p class="teh-footer__legal">
+                    ©2026. All Rights Reserved | The Eleventh Hour Logistics, Inc.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="teh-footer__watermark" aria-hidden="true">THEELEVENTHHOUR</div>
+
+    </footer>
+
+    <script src="shared.js"></script>
+
+</body>
+
+</html>
